@@ -1,0 +1,98 @@
+
+
+@media (max-width:1399px) {
+
+}
+
+@media (max-width:1199px) {
+
+}
+
+@media (max-width:991px) {
+    #navbarNavDropdown {
+        background-color: #fff;
+        height: 100vh;
+        transition: all 0.4s;
+        position: relative;
+    }
+    
+    #navbarNavDropdown li {
+        /* border: 2px solid rebeccapurple; */
+    }
+
+    #navbarNavDropdown .active {
+        color: #0078ff !important;
+    }
+
+    #navbarNavDropdown li a {
+        color: #4e4e4e !important;
+        padding-left: 15px;
+    }
+
+    #navbarNavDropdown li a:hover {
+        color: #0078ff !important;
+    } 
+
+    /* .navbar-close {
+        position: absolute;
+        right: 0;
+        top: -35px;
+        background-color: transparent;
+        border: none;
+
+    }
+
+    .navbar-close:target .navbar-toggler {
+        display: none;
+    } */
+
+
+    .navbar-close span {
+        font-size: 1.3rem;
+        color: #fff;
+    }
+
+    #about .about p {
+        width: 103%;
+    }
+
+    #services .card h4 {
+        font-size: calc(0.9rem + .3vw);;
+    }
+
+    #work .card h5 {
+        font-size:1.1rem;
+    }
+
+    #work .card a {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width:767px) {
+    #home .txt h1 {
+        font-size: 3rem;
+    }
+
+    #home .txt span {
+        font-size: 1.8rem;
+    }
+
+    #services .card h4 {
+        font-size: calc(1.2rem + .3vw);;
+    }
+
+    #work .card h5 {
+        font-size:1.25rem;
+    }
+
+    #work .card a {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width:575px) {
+    #counter .card {
+        margin-top: 30px;
+    }
+}

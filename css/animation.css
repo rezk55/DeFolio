@@ -1,0 +1,10 @@
+
+@keyframes typewriter{
+    0%{width: 0;}
+    50%{width: 12rem;}
+    100%{width: 0;}
+  }
+  @keyframes blinkTextCursor{
+    from{border-right-color: #fff;}
+    to{border-right-color: transparent;}
+  }

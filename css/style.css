@@ -1,0 +1,433 @@
+
+h1, h2, h3, h4, h5, h6 {
+    color: #1e1e1e;
+}
+
+p {
+    color: #4e4e4eb4;
+    font-weight: 400;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background-color: #f5f5f5;
+    color: #4e4e4e;
+}
+
+
+/* navbar  */
+#nav {
+    background-color: #000000e3;
+}
+
+.logo {
+    font-size: 29px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+nav li a{
+    position: relative;
+    transition: color 0.4s;
+}
+
+nav li a::before {
+    position: absolute;
+    content: "";
+    bottom: 0;
+    height: 2px;
+    width: 0;
+    background-color: #fff; 
+    transition: width 0.4s;
+}
+
+nav li a:hover::before {
+    width: 70%;
+}
+
+nav li .active::before {
+    position: absolute;
+    content: "";
+    background-color: #fff;
+    width: 70%;
+    height: 2px;
+    bottom: 0;
+}
+
+nav li a i {
+    font-size: 0.75rem;
+    padding-left: 3px;
+}
+
+nav .dropdown li a {
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+nav .dropdown li a:hover {
+    color: #0078ff;
+}
+
+.dropdown-show-hover:hover >ul.view {
+    display: block;
+}
+
+.dropdown-show-hover:hover >ul.view-start {
+
+    top: 36px;
+    left: -96%;
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+/* home  */
+#home {
+    background-image: url("../img/hero-bg.jpg");
+    background-size:cover;
+    background-position: center center;
+    position: relative;
+}
+
+#home .txt h1 {
+    font-size: 4.5rem;
+}
+
+#home .txt span {
+    font-size: 2.5rem;
+}
+
+/***************************************/
+/* about  */
+.about  .profile-desc p {
+    color: #4e4e4e ;
+}
+/*********************************/
+
+/* services  */
+#services .card .icon {
+    border: 10px solid #0078ff;
+    transition: all 0.4S;
+    position: relative;
+}
+
+#services .card:hover .icon{
+    background-color: #0078ff;
+    color: #fff;
+    border-color:#fff;
+}
+
+#services .card:hover .icon::after {
+    position: absolute;
+    content: "";
+    top: 50%;
+    bottom: 0;
+    right: 0;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    box-shadow: 0 0 0 10px #0077ff4f;
+    transition: border 0.4s;
+}
+
+#services .card i {
+    font-size: 2.5rem;
+}
+
+/* counter */
+#counter {
+    background-image: url("../img/counters-bg.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+#counter .overlay {
+    background-color: #0077ff9f;
+}
+
+#counter .card {
+    background: transparent;
+    border: none;
+}
+
+#counter .card .icon {
+    width:60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 0 0 10px #cde1f8;
+} 
+
+#counter .card-body {
+    padding: 0;
+}
+
+#counter .card-body h5 {
+    font-size: 1rem;
+}
+
+#counter .card .count {
+    margin-top: 20px;
+    margin-bottom: 0;
+    font-size: 2rem;
+}
+
+#counter .card .icon i {
+    font-size: 2rem;
+}
+/***********************************/
+
+/* work  */
+#work .card {
+    border: none;
+    box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.15);
+}
+
+#work .img {
+    overflow: hidden;
+}
+
+#work .card:hover img{
+    scale: 1.3;
+}
+
+#work .card img {
+    transition: scale 0.6s;
+}
+
+#work .card p {
+    font-size: 0.8rem;
+}
+
+#work .card p span {
+    color: #0078ff;
+}
+
+#work .card a {
+    color: #0078ff;
+    font-size: 2.5rem;
+}
+/**********************************/
+
+/* slider  */
+#slider {
+    background-image: url("../img/overlay-bg.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+#slider .overlay {
+    background-color: #0077ff9f;
+}
+
+#slider .card {
+    border: none;
+    background-color: transparent;
+}
+
+#slider .card p {
+    font-size: 1.1rem;
+    font-weight: 300;
+    color:#fff;
+}
+
+#slider .carousel-indicators {
+    bottom: -50px;
+}
+
+#slider .carousel-indicators button {
+    width: 12px;
+    height: 12px;
+    border-radius: 100%;
+}
+/********************************************/
+
+/* blog  */
+
+#blog .card-desc {
+    position: absolute;
+    bottom: -13px;
+    padding: 5px 15px;
+    font-size: 0.7rem;
+    font-weight: 500;
+    background-color: #0078ff;
+    color: #fff;
+}
+
+#blog .card .card-footer h6{
+    color: #4e4e4e;
+}
+
+#blog .card :is(h5, h6) {
+    transition: color 0.4s;
+}
+
+#blog .card  a:hover :is(h5, h6) {
+    color: #0078ff;
+}
+
+#blog .card .card-footer img{
+    display: block;
+    width: 32px;
+    height: 32px;
+}
+/*****************************************/
+
+/* contact  */
+#contact {
+    background-image: url("../img/overlay-bg.jpg");
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    padding-top: 100px;
+    padding-bottom: 1px;
+}
+
+#contact .overlay {
+    background-color: #0077ff9f;
+}
+
+#contact button {
+    transition: all 0.4s;
+}
+
+#contact button:hover {
+    background-color: #0077ffd8;
+    box-shadow: 0 0 0 3px #0077ff4f;
+}
+
+#contact p {
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+#contact li {
+    display: flex;
+    gap: 0.7rem;
+}
+
+#contact li i{
+    color: #0078ff;
+}
+
+#contact li p {
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+#contact .links-icons li {
+    box-shadow: 0 0 0 3px #0078ff;
+    border-radius: 100%;
+    padding: 2px 10px 10px;
+    transition: all 0.4s;
+}
+
+#contact .links-icons li i {
+    font-size: 1.2rem;
+    color: #000;
+    transition: color 0.4s;
+}
+
+#contact .links-icons li:hover {
+    box-shadow: 0 0 0 3px #0077ff4f;
+    background-color: #0078ff;
+}
+
+#contact .links-icons li:hover i {
+    color: #fff;
+}
+/******************************************/
+
+/* footer  */
+#footer {
+    background-color: #0062d3;
+}
+#footer p {
+    color: #fff;
+}
+
+/* button to jump up  */
+.up {
+    opacity: 0;
+    position: fixed;
+    width: 35px;
+    height: 35px;
+    right: 15px;
+    bottom: 15px;
+    background-color: #0077ff91;
+    transition: all .4s;
+}
+
+.up:hover {
+    background-color: #0077ff;
+} 
+
+.up i {
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+
+/* public class */
+.title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+} 
+
+.title::after {
+    position: absolute;
+    content: "";
+    bottom: 0;
+    width: 40px;
+    height: 5px;
+    background-color: #0078ff;
+}
+
+.line::after {
+    position: absolute;
+    content: "";
+    bottom: -10px;
+    left: 0;
+    width: 20%;
+    height: 3px;
+    background-color: #0078ff;
+}
+
+.title-1 {
+    position: absolute;
+    border-right: 4px solid #fff;
+    overflow: hidden;
+}
+
+.anim-typewriter{
+
+    animation: typewriter 1s steps(30) 1s 1 normal both,
+               blinkTextCursor 0.5s steps(30) infinite normal;
+    
+  }
+  
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #0000008f;
+  }
+
+.height-progress {
+    height: 0.7rem;
+}
+
